@@ -20,9 +20,9 @@ const VideoListWrapper = ({title, link}: TVideoWrapper) => {
 
   return (
     <div className="">
-      <div className="flex justify-between mb-5">
+      <div className="flex justify-between mb-5 items-end">
         <h2 className="text-lg lg:text-2xl">{title}</h2>
-        <Link className="text-themecolor text-sm" href={`${link}`}>
+        <Link className="text-gray-300 text-xs" href={`${link}`}>
           مشاهده همه
         </Link>
       </div>

@@ -1,10 +1,12 @@
 @import "tailwindcss";
 
+@font
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --themecolor: rgb(17, 125, 226);
-  --lightblack: rgba(0, 0, 0, 0.753);
+  --lightblack: rgba(0, 0, 0, 0.6);
 }
 
 @theme inline {

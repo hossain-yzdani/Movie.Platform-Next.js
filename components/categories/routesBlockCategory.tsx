@@ -23,7 +23,7 @@ const RoutesBlockCategory = () => {
 
   return (
     <div>
-      <div className="flex flex-row justify-around rounded-lg bg-black p-4 overflow-scroll">
+      <div className="flex flex-row justify-around rounded-lg bg-black p-4 mx-4">
         {categories.map((category) => (
           <Link className="px-4" key={category.id} href={category.link}>
             <h4 className="text-sm">{category.name}</h4>
