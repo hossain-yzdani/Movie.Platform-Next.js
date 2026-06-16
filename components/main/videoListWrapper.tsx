@@ -19,11 +19,11 @@ const VideoListWrapper = ({title, link}: TVideoWrapper) => {
   const number = [ "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten" ];
 
   return (
-    <div className="pl-5">
+    <div className="pl-3">
       <div className="flex justify-between mb-5 items-end px-5">
         <h2 className="text-lg lg:text-2xl">{title}</h2>
         <Link className="text-gray-300 text-xs" href={`${link}`}>
-          مشاهده همه
+          View All
         </Link>
       </div>
 
