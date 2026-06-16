@@ -25,8 +25,8 @@ const myFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "کیو مووی",
-  description: "دانلود و تماشای آنلاین سریال و فیلم های سینمایی روز دنیا",
+  title: "Movie Hall",
+  description: "Let's watch movies together",
 };
 
 export default function RootLayout({
@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" dir="rtl">
+    <html lang="fa">
       <body className={`${myFont.className} font-sans antialiased`}>
         <Navbars />
         <main>{children}</main>

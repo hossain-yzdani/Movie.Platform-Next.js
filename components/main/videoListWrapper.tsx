@@ -19,8 +19,8 @@ const VideoListWrapper = ({title, link}: TVideoWrapper) => {
   const number = [ "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten" ];
 
   return (
-    <div className="">
-      <div className="flex justify-between mb-5 items-end">
+    <div className="pl-5">
+      <div className="flex justify-between mb-5 items-end px-5">
         <h2 className="text-lg lg:text-2xl">{title}</h2>
         <Link className="text-gray-300 text-xs" href={`${link}`}>
           مشاهده همه
@@ -28,7 +28,7 @@ const VideoListWrapper = ({title, link}: TVideoWrapper) => {
       </div>
 
       <Swiper
-        className="px-4 gap-0"
+        className=" gap-0"
         // modules={[Autoplay, Pagination]}
         // autoplay={{
         //   delay: 3000,
@@ -36,7 +36,7 @@ const VideoListWrapper = ({title, link}: TVideoWrapper) => {
         // }}
         freeMode={true}
         spaceBetween={20}
-        slidesPerView={3.3}
+        slidesPerView={2.2}
         // pagination={{ clickable: true }}
         breakpoints={{
           768: {
