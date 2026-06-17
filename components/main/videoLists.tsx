@@ -1,14 +1,38 @@
 import VideoListWrapper from "./videoListWrapper";
 
-const VideoLists = () => {
+export default function Home() {
   return (
-    <div className="">
-      <VideoListWrapper title="Trending" link="/" />
-      <VideoListWrapper title="International Movies" link="/" />
-      <VideoListWrapper title="Iranian Series" link="/" />
-      <VideoListWrapper title="Animation & Anime" link="/" />
-    </div>
+    <main className="min-h-screen py-8 space-y-10">
+      <VideoListWrapper
+        title="Trending Now"
+        link="/trending"
+        icon="trending"
+        autoplay={true}
+        delay={4000}
+      />
+
+      <VideoListWrapper
+        title="Top Rated"
+        link="/top-rated"
+        icon="top"
+        autoplay={false}
+      />
+
+      <VideoListWrapper
+        title="Hot Picks"
+        link="/hot"
+        icon="hot"
+        autoplay={true}
+        delay={3000}
+      />
+
+      <VideoListWrapper
+        title="New Releases"
+        link="/new"
+        icon="new"
+        autoplay={true}
+        delay={5000}
+      />
+    </main>
   );
 }
- 
-export default VideoLists;
