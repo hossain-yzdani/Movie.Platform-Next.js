@@ -43,3 +43,6 @@ body {
   background-color: rgba(0, 0, 0, 0.877);
 }
 
+#nprogress .bar {
+  background: oklch(85.2% 0.199 91.936) !important;
+}
