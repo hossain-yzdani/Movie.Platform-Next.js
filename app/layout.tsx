@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbars from "@/components/main/navbars";
 import Footer from "@/components/main/footer";
+import ProgressBar from "@/components/main/progressBar";
 
 const myFont = localFont({
   src: [
@@ -37,6 +38,7 @@ export default function RootLayout({
   return (
     <html lang="fa">
       <body className={`${myFont.className} font-sans antialiased`}>
+        <ProgressBar />
         <Navbars />
         <main>{children}</main>
         <Footer />
